@@ -1,0 +1,114 @@
+.loginBox {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.loginBox > main {
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(7px);
+    display: grid;
+    place-items: center;
+}
+
+.loginBox > main > figure {
+    position: relative;
+    width: 350px;
+    height: 525px;
+    background-image: url('pokedex.jpg');
+    background-size: contain;
+    border-radius: 13px;
+    text-align: center;
+    animation: zoomMax 1s linear;
+}
+
+@keyframes zoomMax {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.loginBox > main > figure > span {
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    top: 13px;
+    left: 36px;
+    border-radius: 50%;
+}
+
+.loading {
+    animation: shine .5s infinite;
+}
+
+@keyframes shine {
+    from {
+        background-color: black;
+    }
+
+    to {
+        background-color: transparent;
+    }
+}
+
+.messageBox {
+    padding: 150px 30px 0 30px;
+    font-size: 1.3rem;
+}
+
+.loginBox > main > figure > input {
+    position: absolute;
+    bottom: 108px;
+    left: 22px;
+    width: 306px;
+    height: 23px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.pokegifBox {
+    position: absolute;
+    width: 153px;
+    height: 72px;
+    bottom: 25px;
+    left: 108px;
+    background-color: white;
+}
+
+.pokegifBox > span {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 153px;
+    font-size: 8px;
+}
+
+.pokegifBox > span:nth-of-type(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 8px;
+    padding: 5px 5px;
+    text-align: end; 
+}
+
+.pokegifBox > img {
+    /* position: absolute;
+    bottom: 9px;
+    left: 0;
+    width: 153px;
+    max-height: 64px; */
+    position: relative;
+    max-height: 59px;
+    margin-top: 5px;
+}
+
+
+
